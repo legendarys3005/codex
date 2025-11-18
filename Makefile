@@ -1,0 +1,3 @@
+make push:
+	git add .
+	
