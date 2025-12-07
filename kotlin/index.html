@@ -55,7 +55,7 @@
                 <ul>
                     <li><a href="#setup" class="internal-anchor">Setup</a></li>
                     <li><a href="#entrypoint" class="internal-anchor">Entry Point</a></li>
-                    <li><a href="#setup" class="internal-anchor">Setup</a></li>
+                    <li><a href="#print" class="internal-anchor">Print Statement</a></li>
                     <li><a href="#setup" class="internal-anchor">Setup</a></li>
                     <li><a href="#setup" class="internal-anchor">Setup</a></li>
                     <li><a href="#setup" class="internal-anchor">Setup</a></li>
@@ -75,7 +75,34 @@
             <p>Select the file, and give it a name. Now your Kotlin file is created. You can also do it by selecting "File" instead of "Kotlin Class/File" and giving it a extention '.kt' to create a Kotlin file. Now the setup is complete, and you are ready to write Kotlin code.</p>
         </div>
         <div id="entrypoint" class="entrypoint">
-            
+            <h2 class="heading">Entry Point</h2>
+            <p>Unlike languages like Python, JavaScript or Ruby, Kotlin requires a entrypoint. A entrypoint is a function or a class from where the compiler starts to execute the codes. It will only run the codes inside the entrypoint. Just like C, C++ or Dart, Kotlin's entry point is,</p>
+            <div class="code-block">
+                <code class="kotlin">
+                    <span>
+                        <span>
+                            <span class="keyword">fun</span>
+                            <span class="name">main</span>
+                            <span>()</span>
+                        </span>
+                        <span>{....}</span>
+                    </span>
+                </code>
+            </div>
+            <p>And we will write codes inside this function.</p>
+        </div>
+        <div class="print" id="print">
+            <h2 class="heading">Print Statement</h2>
+            <p>Like every other High-Level Programming Languages, Kotlin has a print statement. The syntax is like this,</p>
+            <div class="code-block">
+                <code class="kotlin">
+                    <span class="built-in">println</span>
+                    <span>(</span>
+                    <span class="string">"Hello World!"</span>
+                    <span>)</span>
+                </code>
+            </div>
+            <p>Point to remember, Kotlin Doesn't use ';' (SemiColon). It won't throw an error if you put one, but it just ignores it.</p>
         </div>
     </div>
 </body>

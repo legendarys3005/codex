@@ -53,6 +53,7 @@ body {
         font-weight: 600;
         padding-bottom: 5px;
         border-bottom: 1px solid #ffffff5A;
+        user-select: none;
     }
 
     .anchor {
@@ -106,6 +107,24 @@ body {
     }
 
     .code-block{
+        background-color: #15141f;
+        padding: 30px;
+        margin: 30px;
+        border-radius: 10px;
+        font-size: 15px;
         font-family: "Google Sans Code", monospace;
+        .keyword{
+            color: #dc4b00;
+        }
+        .name{
+            color: cornflowerblue;
+        }
+        .built-in{
+            color: #FFFFFFA1;
+            font-style: italic;
+        }
+        .string{
+            color: #0a991a;
+        }
     }
 }
