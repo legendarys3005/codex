@@ -1,5 +1,5 @@
 const body = document.getElementById("body");
-const languages = [["HTML", "assets/html.png", "html"], ["CSS", "assets/css.png", "css"], ["Kotlin", "assets/kotlin.png", "kotlin"]];
+const languages = [["Kotlin", "assets/kotlin.png", "kotlin"]]; //["HTML", "assets/html.png", "html"], ["CSS", "assets/css.png", "css"], 
 for (let language of languages) {
     const title = language[0];
     const logoPath = language[1];

@@ -16,7 +16,6 @@
             <img src="../assets/kotlin.png" alt="logo">
             <h1>Kotlin - Codex</h1>
         </div>
-        </div>
     </header>
     <div class="body" id="body">
         <div class="prerequisites">
@@ -56,7 +55,7 @@
                     <li><a href="#setup" class="internal-anchor">Setup</a></li>
                     <li><a href="#entrypoint" class="internal-anchor">Entry Point</a></li>
                     <li><a href="#print" class="internal-anchor">Print Statement</a></li>
-                    <li><a href="#setup" class="internal-anchor">Setup</a></li>
+                    <li><a href="#variables" class="internal-anchor">Variables</a></li>
                     <li><a href="#setup" class="internal-anchor">Setup</a></li>
                     <li><a href="#setup" class="internal-anchor">Setup</a></li>
                 </ul>
@@ -64,19 +63,29 @@
         </div>
         <div class="setup" id="setup">
             <h2 class="heading">Setup</h2>
-            <p>To start, to need to create a project in the IntelliJ. First, open IntelliJ IDE. You will see a screen like this,</p>
+            <p>To start, to need to create a project in the IntelliJ. First, open IntelliJ IDE. You will see a screen
+                like this,</p>
             <img src="../assets/setup/kotlin/intellij.png" alt="intellij interface" class="setup image">
             <p>Click on the "New Project" button. After that You will see this screen.</p>
             <img src="../assets/setup/kotlin/new_project.png" alt="create new project" class="setup image">
-            <p>Name it whatever you like and select a path you want. Uncheck the "Add Sample Code" option, or you can keep it. But I'd recommend uncheking it. Current latest JDK is 17(07-12-2025), if it upgrades, change it accordingly. Just keep the latest JDK. Then click the "Create" button at the bottom. Now your project is ready. Now, if you unchecked the "Add Sample Code option, then there is one final task. After the project opens, you will see a folder named "src". Right click on the folder and hover over "new".</p>
+            <p>Name it whatever you like and select a path you want. Uncheck the "Add Sample Code" option, or you can
+                keep it. But I'd recommend uncheking it. Current latest JDK is 17(07-12-2025), if it upgrades, change it
+                accordingly. Just keep the latest JDK. Then click the "Create" button at the bottom. Now your project is
+                ready. Now, if you unchecked the "Add Sample Code option, then there is one final task. After the
+                project opens, you will see a folder named "src". Right click on the folder and hover over "new".</p>
             <img src="../assets/setup/kotlin/project.png" alt="Create file" class="setup image">
-            <p>You will see many option, select the "Kotlin Class/File" option. Now it will open up a window like this,</p>
+            <p>You will see many option, select the "Kotlin Class/File" option. Now it will open up a window like this,
+            </p>
             <img src="../assets/setup/kotlin/create_file.png" alt="name file" class="setup image">
-            <p>Select the file, and give it a name. Now your Kotlin file is created. You can also do it by selecting "File" instead of "Kotlin Class/File" and giving it a extention '.kt' to create a Kotlin file. Now the setup is complete, and you are ready to write Kotlin code.</p>
+            <p>Select the file, and give it a name. Now your Kotlin file is created. You can also do it by selecting
+                "File" instead of "Kotlin Class/File" and giving it a extention '.kt' to create a Kotlin file. Now the
+                setup is complete, and you are ready to write Kotlin code.</p>
         </div>
         <div id="entrypoint" class="entrypoint">
             <h2 class="heading">Entry Point</h2>
-            <p>Unlike languages like Python, JavaScript or Ruby, Kotlin requires a entrypoint. A entrypoint is a function or a class from where the compiler starts to execute the codes. It will only run the codes inside the entrypoint. Just like C, C++ or Dart, Kotlin's entry point is,</p>
+            <p>Unlike languages like Python, JavaScript or Ruby, Kotlin requires a entrypoint. A entrypoint is a
+                function or a class from where the compiler starts to execute the codes. It will only run the codes
+                inside the entrypoint. Just like C, C++ or Dart, Kotlin's entry point is,</p>
             <div class="code-block">
                 <code class="kotlin">
                     <span>
@@ -93,7 +102,8 @@
         </div>
         <div class="print" id="print">
             <h2 class="heading">Print Statement</h2>
-            <p>Like every other High-Level Programming Languages, Kotlin has a print statement. The syntax is like this,</p>
+            <p>Like every other High-Level Programming Languages, Kotlin has a print statement. The syntax is like this,
+            </p>
             <div class="code-block">
                 <code class="kotlin">
                     <span class="built-in">println</span>
@@ -102,7 +112,69 @@
                     <span>)</span>
                 </code>
             </div>
-            <p>Point to remember, Kotlin Doesn't use ';' (SemiColon). It won't throw an error if you put one, but it just ignores it.</p>
+            <p>Point to remember, Kotlin Doesn't use ';' (SemiColon). It won't throw an error if you put one, but it
+                just ignores it.</p>
+        </div>
+        <div class="variables" id="variables">
+            <h2 class="heading">Variables</h2>
+            <p>In Kotlin, there are 2 types of variables. There are mutable variables, means you can change their values in the runtime. And there are immutable variables, means you can't change their values in the runtime. The mutable variables are defined using <inline-code class="keyword">var</inline-code> keyword, and the immutable variables are defined using <inline-code class="keyword">val</inline-code> keyword. The syntax is,</p>
+            <div class="code-block">
+                <code class="kotlin">
+                    <span class="keyword">&ltkeyword&gt</span>
+                    <span class="name">&ltvariable&gt</span>
+                    <span>:</span>
+                    <span class="datatype">&ltdatatype&gt</span>
+                    <span>=</span>
+                    <span>&ltvalue&gt</span>
+                </code>
+            </div>
+            <p>Here is a example,</p>
+            <div class="code-block">
+                <code class="kotlin">
+                    <span class="keyword">var</span>
+                    <span class="name">greet</span>
+                    <span>:</span>
+                    <span class="datatype">String</span>
+                    <span>=</span>
+                    <span>"Hello Kotlin!"</span>
+                </code>
+            </div>
+            <p>It's a mutable variable as it's defined with a <inline-code class="keyword">var</inline-code>. So later in code if we do </p>
+            <div class="code-block">
+                <code class="kotlin">
+                    <span class="name">greet</span>
+                    <span>=</span>
+                    <span>"Hi Everyone!"</span>
+                </code>
+            </div>
+            <p>It won't raise any error. But if we do </p>
+            <div class="code-block">
+                <code class="kotlin">
+                    <span class="keyword">val</span>
+                    <span class="name">name</span>
+                    <span>:</span>
+                    <span class="datatype">String</span>
+                    <span>=</span>
+                    <span>"Codex"</span>
+                </code>
+            </div>
+            <p>Then assigning a value later in the code will raise an error </p>
+            <div class="code-block">
+                <code class="kotlin">
+                    <span class="error">Kotlin: 'val' cannot be reassigned.</span>
+                </code>
+            </div>
+            <divider></divider>
+            <p>Kotlin also supports inferred datatype. Meaning it can determine a variable's datatype by it's value. While it's also a statically typed language. Means, a variable's datatype can't be changed in the runtime. So you don't have to mention the datatype of a variable like <inline-code><span>:</span> <span class="datatype">&ltdatatype&gt</span></inline-code> in the initialisation if you are giving it a value, it will determine the value automatically. You can simply do </p>
+            <div class="code-block">
+                <code class="kotlin">
+                    <span class="keyword">var</span>
+                    <span class="name">name</span>
+                    <span>=</span>
+                    <span>"Codex"</span>
+                </code>
+            </div>
+            <p>and Kotlin will define it as a <inline-code class="datatype">String</inline-code> variable. You can also keep a variable uninitialised while defining. Meaning, you don't have to give it a value while defining. But then you have to mention the datatype. It's not necessary, and Kotlin will fallback on <inline-code class="datatype">Any</inline-code> datatype if you don't mention, but it's a good practice to mention if the datatype if the variable is uninitialised.</p>
         </div>
     </div>
 </body>

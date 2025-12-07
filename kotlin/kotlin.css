@@ -106,25 +106,49 @@ body {
         border-radius: 10px;
     }
 
-    .code-block{
+    .code-block {
         background-color: #15141f;
         padding: 30px;
         margin: 30px;
         border-radius: 10px;
         font-size: 15px;
         font-family: "Google Sans Code", monospace;
-        .keyword{
-            color: #dc4b00;
-        }
-        .name{
-            color: cornflowerblue;
-        }
-        .built-in{
-            color: #FFFFFFA1;
-            font-style: italic;
-        }
-        .string{
-            color: #0a991a;
-        }
     }
+
+    .keyword {
+        color: #dc4b00;
+    }
+
+    .name {
+        color: cornflowerblue;
+    }
+
+    .built-in {
+        color: #FFFFFFA1;
+        font-style: italic;
+    }
+
+    .string {
+        color: #0a991a;
+    }
+
+    .datatype {
+        color: #ABCDEF;
+    }
+
+    .error {
+        color: #fe2f1c;
+    }
+
+    inline-code {
+        background-color: #15141fEA;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 5px;
+    }
+}
+
+divider{
+    display: block;
+    border-bottom: 3px solid #FFFFFF5A;
 }
