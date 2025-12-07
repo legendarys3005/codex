@@ -6,7 +6,7 @@ body {
     background-color: #052e16;
     padding-left: 150px;
     padding-right: 150px;
-    font-family: "Iceland";
+    font-family: "Iceland", sans-serif;
 }
 
 .head {
@@ -15,7 +15,6 @@ body {
     justify-content: start;
     padding: 24px;
     padding-left: 30px;
-    font-family: "Iceland";
     border-bottom: 3px solid #ffffff5A;
 
     .back {
@@ -45,9 +44,8 @@ body {
 }
 
 .body {
-    /* display: flex; */
     user-select: text;
-    font-family: "TASA Explorer";
+    font-family: "TASA Explorer", sans-serif;
     padding: 50px;
 
     .heading {
@@ -61,12 +59,53 @@ body {
         color: #ABCDEF;
         display: inline-block;
         padding-left: 15px;
-        /* important */
     }
 
     .anchor:hover {
         color: #DABB21;
         transform: scale(1.01);
         transition: transform 0.2s ease;
+    }
+
+    .index-list {
+        width: 400px;
+        margin-left: 30px;
+        padding: 5px;
+        border-radius: 30px;
+        background-color: #FFFFFF1A;
+
+        ul {
+            list-style-type: circle;
+
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .internal-anchor {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 20px;
+        display: inline-block;
+        transform-origin: left center;
+    }
+
+    .internal-anchor:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s ease;
+    }
+
+    .image {
+        user-select: none;
+    }
+
+    .image.setup {
+        width: 700px;
+        border-radius: 10px;
+    }
+
+    .code-block{
+        font-family: "Google Sans Code", monospace;
     }
 }
